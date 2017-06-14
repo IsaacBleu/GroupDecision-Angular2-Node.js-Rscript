@@ -1,0 +1,231 @@
+<div class="container-fluid">
+  <h1>Condition Rating(條件評分)</h1>
+
+<div class="row">
+  <div class="col-lg-3">
+    <form name="form" (ngSubmit)="surveyForm.form.valid && survey()" #surveyForm="ngForm">
+      <div class="form-group">
+        <h3>A1</h3>
+        <label for="a1c1g">A1 is better in C1 scores (覺得A1在C1好的分數)</label>
+        <input type="range" name="a1c1gInputName" id="a1c1gInputId" [(ngModel)]="model.a1c1g" value="5" min="1" max="10" oninput="a1c1gOutputId.value = a1c1gInputId.value" required>
+        <output name="a1c1gOutputName" id="a1c1gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c1b">A1 in C1 poor scores (覺得A1在C1不好的分數)</label>
+        <input type="range" name="a1c1bInputName" id="a1c1bInputId" [(ngModel)]="model.a1c1b" value="5" min="1" max="10" oninput="a1c1bOutputId.value = a1c1bInputId.value" required>
+        <output name="a1c1bOutputName" id="a1c1bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c2g">A1 is better in C2 scores (覺得A1在C2好的分數)</label>
+        <input type="range" name="a1c2gInputName" id="a1c2gInputId" [(ngModel)]="model.a1c2g" value="5" min="1" max="10" oninput="a1c2gOutputId.value = a1c2gInputId.value" required>
+        <output name="a1c2gOutputName" id="a1c2gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c2b">A1 in C2 poor scores (覺得A1在C2不好的分數)</label>
+        <input type="range" name="a1c2bInputName" id="a1c2bInputId" [(ngModel)]="model.a1c2b" value="5" min="1" max="10" oninput="a1c2bOutputId.value = a1c2bInputId.value" required>
+        <output name="a1c2bOutputName" id="a1c2bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c3g">A1 is better in C3 scores (覺得A1在C3好的分數)</label>
+        <input type="range" name="a1c3gInputName" id="a1c3gInputId" [(ngModel)]="model.a1c3g" value="5" min="1" max="10" oninput="a1c3gOutputId.value = a1c3gInputId.value" required>
+        <output name="a1c3gOutputName" id="a1c3gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c3b">A1 in C3 poor scores (覺得A1在C3不好的分數)</label>
+        <input type="range" name="a1c3bInputName" id="a1c3bInputId" [(ngModel)]="model.a1c3b" value="5" min="1" max="10" oninput="a1c3bOutputId.value = a1c3bInputId.value" required>
+        <output name="a1c3bOutputName" id="a1c3bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c4g">A1 is better in C4 scores (覺得A1在C4好的分數)</label>
+        <input type="range" name="a1c4gInputName" id="a1c4gInputId" [(ngModel)]="model.a1c4g" value="5" min="1" max="10" oninput="a1c4gOutputId.value = a1c4gInputId.value" required>
+        <output name="a1c4gOutputName" id="a1c4gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c4b">A1 in C4 poor scores (覺得A1在C4不好的分數)</label>
+        <input type="range" name="a1c4bInputName" id="a1c4bInputId" [(ngModel)]="model.a1c4b" value="5" min="1" max="10" oninput="a1c4bOutputId.value = a1c4bInputId.value" required>
+        <output name="a1c4bOutputName" id="a1c4bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c5g">A1 is better in C5 scores (覺得A1在C5好的分數)</label>
+        <input type="range" name="a1c5gInputName" id="a1c5gInputId" [(ngModel)]="model.a1c5g" value="5" min="1" max="10" oninput="a1c5gOutputId.value = a1c5gInputId.value" required>
+        <output name="a1c5gOutputName" id="a1c5gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a1c5b">A1 in C5 poor scores (覺得A1在C5不好的分數)</label>
+        <input type="range" name="a1c5bInputName" id="a1c5bInputId" [(ngModel)]="model.a1c5b" value="5" min="1" max="10" oninput="a1c5bOutputId.value = a1c5bInputId.value" required>
+        <output name="a1c5bOutputName" id="a1c5bOutputId">5</output>
+      </div>
+<!--2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
+      <div class="form-group">
+        <h3>A2</h3>
+        <label for="a2c1g">A2 is better in C1 scores (覺得A2在C1好的分數)</label>
+        <input type="range" name="a2c1gInputName" id="a2c1gInputId" [(ngModel)]="model.a2c1g" value="5" min="1" max="10" oninput="a2c1gOutputId.value = a2c1gInputId.value" required>
+        <output name="a2c1gOutputName" id="a1c1gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c1b">A2 in C1 poor scores (覺得A2在C1不好的分數)</label>
+        <input type="range" name="a2c1bInputName" id="a2c1bInputId" [(ngModel)]="model.a2c1b" value="5" min="1" max="10" oninput="a2c1bOutputId.value = a2c1bInputId.value" required>
+        <output name="a2c1bOutputName" id="a2c1bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c2g">A2 is better in C2 scores (覺得A2在C2好的分數)</label>
+        <input type="range" name="a2c2gInputName" id="a2c2gInputId" [(ngModel)]="model.a2c2g" value="5" min="1" max="10" oninput="a2c2gOutputId.value = a2c2gInputId.value" required>
+        <output name="a2c2gOutputName" id="a2c2gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c2b">A2 in C3 poor scores (覺得A2在C2不好的分數)</label>
+        <input type="range" name="a2c2bInputName" id="a2c2bInputId" [(ngModel)]="model.a2c2b" value="5" min="1" max="10" oninput="a2c2bOutputId.value = a2c2bInputId.value" required>
+        <output name="a2c2bOutputName" id="a2c2bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c3g">A2 is better in C3 scores (覺得A2在C3好的分數)</label>
+        <input type="range" name="a2c3gInputName" id="a2c3gInputId" [(ngModel)]="model.a2c3g" value="5" min="1" max="10" oninput="a2c3gOutputId.value = a2c3gInputId.value" required>
+        <output name="a2c3gOutputName" id="a2c3gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c3b">A2 in C3 poor scores (覺得A2在C3不好的分數)</label>
+        <input type="range" name="a2c3bInputName" id="a2c3bInputId" [(ngModel)]="model.a2c3b" value="5" min="1" max="10" oninput="a2c3bOutputId.value = a2c3bInputId.value" required>
+        <output name="a2c3bOutputName" id="a2c3bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c4g">A2 is better in C4 scores (覺得A2在C4好的分數)</label>
+        <input type="range" name="a2c4gInputName" id="a2c4gInputId" [(ngModel)]="model.a2c4g" value="5" min="1" max="10" oninput="a2c4gOutputId.value = a2c4gInputId.value" required>
+        <output name="a2c4gOutputName" id="a2c4gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c4b">A2 in C4 poor scores (覺得A2在C4不好的分數)</label>
+        <input type="range" name="a2c4bInputName" id="a2c4bInputId" [(ngModel)]="model.a2c4b" value="5" min="1" max="10" oninput="a2c4bOutputId.value = a2c4bInputId.value" required>
+        <output name="a2c4bOutputName" id="a2c4bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c5g">A2 is better in C5 scores (覺得A2在C5好的分數)</label>
+        <input type="range" name="a2c5gInputName" id="a2c5gInputId" [(ngModel)]="model.a2c5g" value="5" min="1" max="10" oninput="a2c5gOutputId.value = a2c5gInputId.value" required>
+        <output name="a2c5gOutputName" id="a2c5gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a2c5b">A2 in C5 poor scores (覺得A2在C5不好的分數)</label>
+        <input type="range" name="a2c5bInputName" id="a2c5bInputId" [(ngModel)]="model.a2c5b" value="5" min="1" max="10" oninput="a2c5bOutputId.value = a2c5bInputId.value" required>
+        <output name="a2c5bOutputName" id="a2c5bOutputId">5</output>
+      </div>
+<!--3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+      <div class="form-group">
+        <h3>A3</h3>
+        <label for="a3c1g">A3 is better in C1 scores (覺得A3在C1好的分數)</label>
+        <input type="range" name="a3c1gInputName" id="a3c1gInputId" [(ngModel)]="model.a3c1g" value="5" min="1" max="10" oninput="a3c1gOutputId.value = a3c1gInputId.value" required>
+        <output name="a3c1gOutputName" id="a3c1gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c1b">A3 in C1 poor scores (覺得A3在C1不好的分數)</label>
+        <input type="range" name="a3c1bInputName" id="a3c1bInputId" [(ngModel)]="model.a3c1b" value="5" min="1" max="10" oninput="a3c1bOutputId.value = a3c1bInputId.value" required>
+        <output name="a3c1bOutputName" id="a3c1bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c2g">A3 is better in C2 scores (覺得A3在C2好的分數)</label>
+        <input type="range" name="a3c2gInputName" id="a3c2gInputId" [(ngModel)]="model.a3c2g" value="5" min="1" max="10" oninput="a3c2gOutputId.value = a3c2gInputId.value" required>
+        <output name="a3c2gOutputName" id="a3c2gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c2b">A3 in C2 poor scores (覺得A3在C2不好的分數)</label>
+        <input type="range" name="a3c2bInputName" id="a3c2bInputId" [(ngModel)]="model.a3c2b" value="5" min="1" max="10" oninput="a3c2bOutputId.value = a3c2bInputId.value" required>
+        <output name="a3c2bOutputName" id="a3c2bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c3g">A3 is better in C3 scores (覺得A3在C3好的分數)</label>
+        <input type="range" name="a3c3gInputName" id="a3c3gInputId" [(ngModel)]="model.a3c3g" value="5" min="1" max="10" oninput="a3c3gOutputId.value = a3c3gInputId.value" required>
+        <output name="a3c3gOutputName" id="a3c3gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c3b">A3 in C3 poor scores (覺得A3在C3不好的分數)</label>
+        <input type="range" name="a3c3bInputName" id="a3c3bInputId" [(ngModel)]="model.a3c3b" value="5" min="1" max="10" oninput="a3c3bOutputId.value = a3c3bInputId.value" required>
+        <output name="a3c3bOutputName" id="a3c3bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c4g">A3 is better in C4 scores (覺得A3在C4好的分數)</label>
+        <input type="range" name="a3c4gInputName" id="a3c4gInputId" [(ngModel)]="model.a3c4g" value="5" min="1" max="10" oninput="a3c4gOutputId.value = a3c4gInputId.value" required>
+        <output name="a3c4gOutputName" id="a3c4gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c4b">A3 in C4 poor scores (覺得A3在C4不好的分數)</label>
+        <input type="range" name="a3c4bInputName" id="a3c4bInputId" [(ngModel)]="model.a3c4b" value="5" min="1" max="10" oninput="a3c4bOutputId.value = a3c4bInputId.value" required>
+        <output name="a3c4bOutputName" id="a3c4bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c5g">A3 is better in C4 scores (覺得A3在C5好的分數)</label>
+        <input type="range" name="a3c5gInputName" id="a3c5gInputId" [(ngModel)]="model.a3c5g" value="5" min="1" max="10" oninput="a3c5gOutputId.value = a3c5gInputId.value" required>
+        <output name="a3c5gOutputName" id="a3c5gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a3c5b">A3 in C5 poor scores (覺得A3在C5不好的分數)</label>
+        <input type="range" name="a3c5bInputName" id="a3c5bInputId" [(ngModel)]="model.a3c5b" value="5" min="1" max="10" oninput="a3c5bOutputId.value = a3c5bInputId.value" required>
+        <output name="a3c5bOutputName" id="a3c5bOutputId">5</output>
+      </div>
+<!--4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+      <div class="form-group">
+        <h3>A4</h3>
+        <label for="a4c1g">A4 is better in C1 scores (覺得A4在C1好的分數)</label>
+        <input type="range" name="a4c1gInputName" id="a4c1gInputId" [(ngModel)]="model.a4c1g" value="5" min="1" max="10" oninput="a4c1gOutputId.value = a4c1gInputId.value" required>
+        <output name="a4c1gOutputName" id="a4c1gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c1b">A4 in C1 poor scores (覺得A4在C1不好的分數)</label>
+        <input type="range" name="a4c1bInputName" id="a4c1bInputId" [(ngModel)]="model.a4c1b" value="5" min="1" max="10" oninput="a4c1bOutputId.value = a4c1bInputId.value" required>
+        <output name="a4c1bOutputName" id="a4c1bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c2g">A4 is better in C2 scores (覺得A4在C2好的分數)</label>
+        <input type="range" name="a4c2gInputName" id="a4c2gInputId" [(ngModel)]="model.a4c2g" value="5" min="1" max="10" oninput="a4c2gOutputId.value = a4c2gInputId.value" required>
+        <output name="a4c2gOutputName" id="a4c2gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c2b">A4 in C2 poor scores (覺得A4在C2不好的分數)</label>
+        <input type="range" name="a4c2bInputName" id="a4c2bInputId" [(ngModel)]="model.a4c2b" value="5" min="1" max="10" oninput="a4c2bOutputId.value = a4c2bInputId.value" required>
+        <output name="a4c2bOutputName" id="a4c2bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c3g">A4 is better in C3 scores (覺得A4在C3好的分數)</label>
+        <input type="range" name="a4c3gInputName" id="a4c3gInputId" [(ngModel)]="model.a4c3g" value="5" min="1" max="10" oninput="a4c3gOutputId.value = a4c3gInputId.value" required>
+        <output name="a4c3gOutputName" id="a4c3gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c3b">A4 in C3 poor scores (覺得A4在C3不好的分數)</label>
+        <input type="range" name="a4c3bInputName" id="a4c3bInputId" [(ngModel)]="model.a4c3b" value="5" min="1" max="10" oninput="a4c3bOutputId.value = a4c3bInputId.value" required>
+        <output name="a4c3bOutputName" id="a4c3bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c4g">A4 is better in C4 scores (覺得A4在C4好的分數)</label>
+        <input type="range" name="a4c4gInputName" id="a4c4gInputId" [(ngModel)]="model.a4c4g" value="5" min="1" max="10" oninput="a4c4gOutputId.value = a4c4gInputId.value" required>
+        <output name="a4c4gOutputName" id="a4c4gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c4b">A4 in C4 poor scores (覺得A4在C4不好的分數)</label>
+        <input type="range" name="a4c4bInputName" id="a4c4bInputId" [(ngModel)]="model.a4c4b" value="5" min="1" max="10" oninput="a4c4bOutputId.value = a4c4bInputId.value" required>
+        <output name="a4c4bOutputName" id="a4c4bOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c5g">A4 is better in C5 scores (覺得A4在C5好的分數)</label>
+        <input type="range" name="a4c5gInputName" id="a4c5gInputId" [(ngModel)]="model.a4c5g" value="5" min="1" max="10" oninput="a4c5gOutputId.value = a4c5gInputId.value" required>
+        <output name="a4c5gOutputName" id="a4c5gOutputId">5</output>
+      </div>
+      <div class="form-group">
+        <label for="a4c5b">A4 in C5 poor scores (覺得A4在C5不好的分數)</label>
+        <input type="range" name="a4c5bInputName" id="a4c5bInputId" [(ngModel)]="model.a4c5b" value="5" min="1" max="10" oninput="a4c5bOutputId.value = a4c5bInputId.value" required>
+        <output name="a4c5bOutputName" id="a4c5bOutputId">5</output>
+      </div>
+
+      <!--<div class="form-group">
+        <input type="hidden" id = "username" name="username" [(ngModel)]="currentUser.username">
+      </div>-->
+
+      <div class="form-group">
+        <button [disabled]="loading" class="btn btn-primary">Next Page</button>
+        <a [routerLink]="['/home']" class="btn btn-link">Home</a>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="col-lg-6">
+    <iframe src="select1.html" width="1150" height="2000" frameborder="0" scrolling="no"></iframe>
+  </div>
+</div>
+</div>
