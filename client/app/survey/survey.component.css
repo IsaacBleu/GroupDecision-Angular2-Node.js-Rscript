@@ -1,0 +1,40 @@
+input[type="range"]{
+		  -webkit-appearance: none;
+		  border-radius:2px;
+		  width:200px;
+		  height:3px;
+		  background-image:-webkit-linear-gradient(left ,#bde6ff 0%, #bde6ff 100%);
+		  box-shadow:inset #ebb 0 0 5px;
+		  outline : none;
+		  transition:.1s;
+		}
+		input[type="range"]::-webkit-slider-thumb{
+		  -webkit-appearance: none;
+		  width:10px;
+		  height:10px;
+		  background:#3372ff;
+		  border-radius:50%;
+		  transition:.1s;
+		}
+
+		input[type="range"]::-webkit-slider-thumb:hover,
+		input[type="range"]::-webkit-slider-thumb:active{
+		  width:16px;
+		  height:16px;
+		}
+.selected {color: OrangeRed;}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 20px #42A948; /* green */
+	background: #42A948
+}
+
+.ng-invalid:not(form)  {
+  border-left: 20px #a94442; /* red */
+	background: #a94442;
+}
+
+
+p {color: #333333;}
+h2 {color: #3388d8;}
+h3 {color: #4f92d1;}
