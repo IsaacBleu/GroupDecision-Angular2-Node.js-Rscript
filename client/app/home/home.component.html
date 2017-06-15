@@ -1,12 +1,13 @@
-﻿<div class="col-md-6 col-md-offset-3">
-    <h1>Hi {{currentUser.firstName}}!</h1>
-    <p>You're logged in with the MEAN Stack & Angular 2!!</p>
-    <h3>All registered users:</h3>
-    <ul>
-        <li *ngFor="let user of users">
-            {{user.username}} ({{user.firstName}} {{user.lastName}})
-            - <a (click)="deleteUser(user._id)">Delete</a>
-        </li>
-    </ul>
-    <p><a [routerLink]="['/login']">Logout</a></p>
+<div class="container">
+    <h1>{{currentUser.username}}</h1>
+
+    <nav>
+      <ul>
+        <li><a [routerLink]="['/surveyA']">Fill in the questionnaire(填寫問卷)</a></li>
+        <li><a [routerLink]="['/result']">Select User(選擇使用者)</a></li>
+        <li><a [routerLink]="['/result2']">Decision Result(查看結果)</a></li>
+        <li><a [routerLink]="['/login']">Log Out(登出)</a></li>
+      </ul>
+    </nav>
+
 </div>
