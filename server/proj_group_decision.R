@@ -8,7 +8,7 @@ J2String <- input[[1]]
 
 library(mongolite)
 
-#設定連結資料庫
+#connect database
 mong <- mongo(collection = "users", db = "local", url = "mongodb://localhost")
 
 
