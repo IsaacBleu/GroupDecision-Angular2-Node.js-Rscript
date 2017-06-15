@@ -1,0 +1,62 @@
+ header, nav, section, article, footer {
+         display: block;
+       }
+       header, nav, section, article, footer {
+         color: white;
+       }
+       header, footer {
+         text-align: center;
+         width: 100%;
+       }
+       header {
+	background-color: red;
+	font-size: 36px;
+	font-weight: bold;
+       }
+       nav {
+         position: fixed;
+         top: 40px;
+         right: 25px;
+         background-color: blue;
+         width: 100px;
+       }
+       section {
+	width: 86%;
+	background-color: gray;
+	padding: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+       }
+		   div {
+	width: 86%;
+	background-color: gray;
+	padding: 5px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+       }
+        
+        body{background-color:ghostwhite
+
+	}
+       p{font-family: Microsoft JhengHei;
+		font-size: 24px;
+	 }
+
+	li{font-family: Microsoft JhengHei;
+	   font-size:16px;
+	}
+
+       footer {
+         background-color: green;
+         font-size: 10px;
+       }
+        
+        input{background-color:yellow;
+	      font-family: Microsoft JhengHei;
+	     font-size:16px;
+	     font-weight:bold;
+	}
