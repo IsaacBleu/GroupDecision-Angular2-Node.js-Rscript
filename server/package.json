@@ -1,11 +1,8 @@
 {
-    "name": "mean-angular2-registration-login-example-server",
+    "name": "GroupDecision",
     "version": "1.0.0",
-    "description": "Server for MEAN Stack with Angular 2 User Registration and Login Example",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/cornflourblue/mean-angular2-registration-login-example.git"
-    },
+    "description": "TMU105-Project-GroupDecision",
+    "license": "",
     "dependencies": {
         "bcryptjs": "^2.1.0",
         "body-parser": "^1.13.2",
@@ -18,7 +15,7 @@
         "mongoskin": "^2.1.0",
         "q": "^1.4.1",
         "request": "^2.58.0",
-        "rootpath": "^0.1.2"
-    },
-    "license": "MIT"
+        "rootpath": "^0.1.2",
+        "r-script": "^0.0.3"
+    }
 }
