@@ -5,13 +5,13 @@ The original solution can be found here: https://github.com/cornflourblue/mean-a
 For details and documentation go to http://jasonwatmore.com/post/2017/02/22/mean-with-angular-2-user-registration-and-login-example-tutorial
 
 # About Project
-此專案為最佳化決策系統之實作
-背景為根據3位老年人的意見，從4間預定的安養機構選出一個首選的安養中心
-透過問卷式回答，了解每位老年人心中的決策準則
-直覺模糊多屬性決策方法（IF-MADM）將眾人決策準則形成共識，決定出最適合之安養機構
+此專案為最佳化決策系統之實作。
+背景為3位好朋友在退休後希望找一間安養機構，共同過退休生活。
+透過問卷式填答，了解每位填答者心中的決策準則，並最後從4間預定的安養機構選出一個首選的安養中心。
+採用直覺模糊多屬性決策方法（IF-MADM）建立模型，將眾人決策準則形成共識，決定出最適合之安養機構。
 
 # Tools
-Frontend:Angular2+HTML5+CSS+Bootstrap，Backend:Node.js，Database:Mongodb
+Frontend:Angular2+HTML5+CSS+Bootstrap，Backend:Node.js，Database:MongoDB，Model:R
 
 # 登入頁面
 若已有註冊帳號則可直接登入系統
