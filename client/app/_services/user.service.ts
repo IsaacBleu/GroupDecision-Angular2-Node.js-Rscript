@@ -12,6 +12,10 @@ export class UserService {
         return this.http.get(this.config.apiUrl + '/users', this.jwt()).map((response: Response) => response.json());
     }
 
+    getResult(user: User) {
+        return this.http.post(this.config.apiUrl + '/users/result2',user, this.jwt()).map((response: Response) => response.json());
+    }
+
     getById(_id: string) {
         return this.http.get(this.config.apiUrl + '/users/' + _id, this.jwt()).map((response: Response) => response.json());
     }
@@ -26,6 +30,18 @@ export class UserService {
 
     delete(_id: string) {
         return this.http.delete(this.config.apiUrl + '/users/' + _id, this.jwt());
+    }
+
+    result(user: User) {
+        return this.http.post(this.config.apiUrl + '/users/result', user, this.jwt());
+    }
+
+    surveyA(user: User) {
+        return this.http.post(this.config.apiUrl + '/users/surveyA' , user, this.jwt());
+    }
+
+    surveyB(user: User) {
+        return this.http.post(this.config.apiUrl + '/users/surveyB' , user, this.jwt());
     }
 
     // private helper methods
